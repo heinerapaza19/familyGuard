@@ -32,6 +32,7 @@ import java.time.DayOfWeek;
 import java.time.Instant;
 import java.time.LocalTime;
 import org.flywaydb.core.Flyway;
+import org.flywaydb.core.api.MigrationVersion;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -60,9 +61,19 @@ class PersistenceIntegrationTests {
 
     @Test
     void flywayAplicaLasMigracionesDisponibles() {
-        assertThat(flyway.info().current()).isNotNull();
-        // V8 (aditiva) registra el estado real de aplicación del bloqueo web por regla y dispositivo.
-        assertThat(flyway.info().current().getVersion().getVersion()).isEqualTo("12");
+        var info = flyway.info();
+        assertThat(info.current()).isNotNull();
+        // Todas las migraciones encontradas (db/migration y, en pruebas, db/pendiente) quedan aplicadas:
+        // la versión actual es la más alta disponible, sin fijar un número que se desactualice con cada migración.
+        assertThat(info.pending()).isEmpty();
+        MigrationVersion ultima = java.util.Arrays.stream(info.all())
+                .map(org.flywaydb.core.api.MigrationInfo::getVersion)
+                .filter(java.util.Objects::nonNull)
+                .max(java.util.Comparator.naturalOrder())
+                .orElseThrow();
+        assertThat(info.current().getVersion()).isEqualTo(ultima);
+        // Piso mínimo: V13 (solicitudes de desbloqueo) es la más reciente validada.
+        assertThat(ultima.isAtLeast("13")).isTrue();
         assertThat(flyway.validateWithResult().validationSuccessful).isTrue();
     }
 

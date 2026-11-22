@@ -1,0 +1,24 @@
+# Solo se envía a Docker lo que necesita el backend (ver Dockerfile).
+.git
+.github
+.idea
+.vscode
+.mvn
+.tools
+.fg-tmp
+build
+dist
+docs
+img
+config
+scripts
+Claude outputs
+**/target
+**/.env
+**/.env.*
+**/*.key
+**/*.log
+familyguard-admin/src
+familyguard-agent/src/test
+familyguard-backend/src/test
+*.md
