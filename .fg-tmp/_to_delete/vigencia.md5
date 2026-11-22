@@ -1,0 +1,14 @@
+8475b4a57a559d3392c8bf1e080e086b  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/RestriccionDtos.java
+8456a6a0ca4ff33bb1a7ec7a688ed86b  familyguard-backend/src/main/java/com/familyguard/familyguard/service/RestriccionService.java
+6fc830dc6b87fa9e375c79e1d3f3a294  familyguard-backend/src/test/java/com/familyguard/familyguard/RestrictionValidityApiIntegrationTests.java
+8fcee3747e0054605afdba9a665fcbcd  familyguard-agent/src/main/java/com/familyguard/agent/DetectionModels.java
+77522542c492e7ed326762a01a8c2872  familyguard-agent/src/main/java/com/familyguard/agent/AgentApiClient.java
+3606b7c819abc0fc9ebae143752ce6fe  familyguard-agent/src/main/java/com/familyguard/agent/RuleEvaluator.java
+4c207bae47ed07e38c3b1b1304eff50d  familyguard-agent/src/main/java/com/familyguard/agent/BlockedSummary.java
+9dd01f8f5f4c509d76aae7d7d7e62f22  familyguard-agent/src/test/java/com/familyguard/agent/RestrictionValidityTests.java
+a391538cc9e93d92c41ed9a12e693bfd  familyguard-admin/src/main/java/com/familyguard/admin/AdminApiClient.java
+2acc948eefd80a8db2f4a514cb40ea7f  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+e51f7ce41f45c6d7b9c2f584e862a59f  familyguard-admin/src/main/java/com/familyguard/admin/RestrictionPlan.java
+df88a0a8611e056b48601275c1379e56  familyguard-admin/src/test/java/com/familyguard/admin/RestrictionPlanTests.java
+b8fb35c4b91cf60f05eacf846b487d50  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard.css
+4a056ef04fccb6ba61374927856db2c8  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard-light.css

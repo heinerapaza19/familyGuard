@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<!-- Pantalla de vinculación: tarjeta blanca centrada. El panel principal solo se abre tras una vinculación confirmada. -->
+<StackPane styleClass="link-root" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.familyguard.agent.AgentLinkController">
+    <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+    <VBox fx:id="card" spacing="16" alignment="TOP_CENTER" maxWidth="470" maxHeight="-Infinity" styleClass="link-card">
+        <HBox spacing="12" alignment="CENTER">
+            <StackPane styleClass="link-shield">
+                <Group scaleX="1.45" scaleY="1.45">
+                    <SVGPath content="M12 2 L20 5 V11 C20 16.5 16.6 20.6 12 22 C7.4 20.6 4 16.5 4 11 V5 Z" styleClass="link-shield-body"/>
+                    <SVGPath content="M8.2 12.2 L11 15 L16.2 9.4" styleClass="link-shield-check"/>
+                </Group>
+            </StackPane>
+            <Label text="FamilyGuard" styleClass="link-brand"/>
+        </HBox>
+        <VBox spacing="6" alignment="CENTER">
+            <Label text="Vincular esta computadora" styleClass="link-title"/>
+            <Label text="Introduce el código de 8 caracteres que aparece en FamilyGuard Administrador."
+                   wrapText="true" textAlignment="CENTER" styleClass="link-description"/>
+        </VBox>
+        <TextField fx:id="codeField" promptText="Código de 8 caracteres" maxWidth="Infinity" styleClass="link-code-input"/>
+        <Button fx:id="linkButton" text="Vincular dispositivo" defaultButton="true" maxWidth="Infinity" styleClass="link-primary"/>
+        <HBox fx:id="progressBox" spacing="10" alignment="CENTER" managed="false" visible="false">
+            <ProgressIndicator prefWidth="20" prefHeight="20" styleClass="link-progress"/>
+            <Label fx:id="progressLabel" text="Conectando con FamilyGuard…" styleClass="link-progress-text"/>
+        </HBox>
+        <HBox fx:id="errorBox" spacing="10" alignment="CENTER_LEFT" managed="false" visible="false" styleClass="link-error">
+            <SVGPath content="M12 3 L22 20.5 H2 Z M12 9.5 V14 M12 17.2 V17.3" styleClass="link-error-icon"/>
+            <Label fx:id="errorLabel" wrapText="true" HBox.hgrow="ALWAYS" maxWidth="Infinity" styleClass="link-error-text"/>
+        </HBox>
+        <Hyperlink fx:id="configureLink" text="Configurar conexión" onAction="#toggleConnection" styleClass="link-configure"/>
+        <VBox fx:id="connectionBox" spacing="8" managed="false" visible="false" styleClass="link-connection">
+            <Label text="Dirección del servidor FamilyGuard" styleClass="link-field-label"/>
+            <TextField fx:id="serverField" maxWidth="Infinity" styleClass="link-server-input"/>
+            <Label fx:id="serverHint" wrapText="true" styleClass="link-hint"/>
+        </VBox>
+    </VBox>
+</StackPane>

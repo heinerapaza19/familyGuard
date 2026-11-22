@@ -1,0 +1,86 @@
+/* FamilyGuard Agente — tema Oscuro: misma estructura, contraste alto. Se carga encima de agent.css. */
+.root, .agent-shell, .main-area, .link-root { -fx-background-color: #0F1626; -fx-text-fill: #E9EFFC; }
+.label { -fx-text-fill: #E9EFFC; }
+.sidebar { -fx-background-color: linear-gradient(to bottom, #0E2A6B 0%, #1E4FB8 55%, #4E47A8 100%); }
+.page-title, .section-heading, .card-title, .status-title, .link-title, .link-brand, .value { -fx-text-fill: #F1F5FF; }
+.page-subtitle, .status-detail, .tile-caption, .card-copy, .muted, .detail-label, .link-description, .link-hint, .link-field-label, .warning-copy { -fx-text-fill: #A9B7D0; }
+.theme-toggle { -fx-background-color: #1B2740; }
+.theme-option { -fx-text-fill: #E9EFFC; }
+.theme-option.theme-selected { -fx-background-color: #2A3958; -fx-border-color: #FFDDB0; }
+.theme-icon { -fx-stroke: #E9EFFC; }
+.white-card, .card, .link-card { -fx-background-color: #172238; }
+.status-agent { -fx-background-color: #123A35; -fx-border-color: #1F6656; }
+.status-supervision { -fx-background-color: #12324A; -fx-border-color: #1F5A80; }
+.status-connection { -fx-background-color: #3A2C14; -fx-border-color: #6B4F1E; }
+.status-agent .tone-success, .status-connection .tone-success { -fx-text-fill: #3FE0A8; }
+.status-supervision .tone-success, .tone-info { -fx-text-fill: #7FB2FF; }
+.tone-warning, .tone-danger { -fx-text-fill: #FFA65C; }
+.tile-blue { -fx-background-color: #16294A; } .tile-purple { -fx-background-color: #2A1F4A; }
+.tile-green { -fx-background-color: #123A35; } .tile-pink { -fx-background-color: #3F1A2E; }
+.tile-blue .tile-value { -fx-text-fill: #8DB8FF; } .tile-purple .tile-value { -fx-text-fill: #C6A6FF; }
+.tile-green .tile-value { -fx-text-fill: #5CE6B8; } .tile-pink .tile-value { -fx-text-fill: #FF8CC6; }
+.soft-action, .button.secondary { -fx-background-color: #22304A; -fx-text-fill: #E9EFFC; -fx-border-color: #34445F; }
+.soft-action:hover, .button.secondary:hover { -fx-background-color: #2B3B5A; }
+.icon-ink { -fx-stroke: #E9EFFC; } .icon-fill-ink { -fx-fill: #E9EFFC; }
+.status-bar { -fx-background-color: #131D31; -fx-border-color: #26344D transparent transparent transparent; }
+.footer-text { -fx-text-fill: #A9B7D0; } .footer-icon { -fx-stroke: #A9B7D0; }
+.detail-row { -fx-border-color: transparent transparent #26344D transparent; }
+.privacy-point { -fx-background-color: #123A35; }
+.warning-card { -fx-background-color: #3A2C14; -fx-border-color: #6B4F1E; } .warning-title { -fx-text-fill: #FFA65C; }
+.link-connection { -fx-background-color: #111B2E; }
+.link-shield { -fx-background-color: #1B2B4A; }
+.link-error { -fx-background-color: #3B1C24; } .link-error-text { -fx-text-fill: #FF8A98; } .link-error-icon { -fx-stroke: #FF8A98; }
+.link-code-input, .text-field, .password-field, .spinner, .combo-box { -fx-background-color: #111B2E; -fx-text-fill: #F1F5FF; -fx-border-color: #34445F; }
+.combo-box .list-cell, .spinner .text-field { -fx-text-fill: #F1F5FF; -fx-background-color: transparent; }
+.check-box { -fx-text-fill: #D5DEEF; } .check-box .box { -fx-background-color: #111B2E; -fx-border-color: #4A5A73; }
+.content-scroll, .content-scroll > .viewport { -fx-background-color: #0F1626; -fx-background: #0F1626; }
+.dialog-pane { -fx-background-color: #0F1626; } .dialog-pane .header-panel { -fx-background-color: #172238; }
+.dialog-pane .header-panel .label { -fx-text-fill: #F1F5FF; }
+
+/* ---- Conexión: tarjetas A–D en tema Oscuro ---- */
+.conn-card-title { -fx-text-fill: #F1F5FF; }
+.conn-card .detail-row { -fx-border-color: transparent transparent #24324D transparent; }
+.conn-card-internet { -fx-background-color: #0E2E30; -fx-border-color: #1D6E68; }
+.conn-card-server { -fx-background-color: #10223F; -fx-border-color: #2A4F86; }
+.conn-card-config { -fx-background-color: #121F3A; -fx-border-color: #2C4777; }
+.conn-card-offline { -fx-background-color: #0E2C24; -fx-border-color: #1F6A50; }
+.conn-success { -fx-text-fill: #43E0A8; } .conn-info { -fx-text-fill: #7DBBFF; } .conn-warning { -fx-text-fill: #FFC266; }
+.conn-danger { -fx-text-fill: #FF8C9E; } .conn-neutral { -fx-text-fill: #A9B7D0; }
+
+/* ---- Tarjeta «Bloqueados» y «Ver detalles» en tema Oscuro ---- */
+.tile-blocked { -fx-background-color: #0E3A3A; }
+.tile-blocked .tile-caption { -fx-text-fill: #7EEADB; }
+.blocked-subtitle { -fx-text-fill: #A9D9D2; }
+.blocked-counter { -fx-text-fill: #E9FBF8; }
+.blocked-section { -fx-background-color: #0E2E30; -fx-border-color: #1D6E68; }
+.blocked-section-title, .blocked-item-name { -fx-text-fill: #F1F5FF; }
+.blocked-item { -fx-border-color: transparent transparent #1D4A4A transparent; }
+.blocked-empty { -fx-text-fill: #A9B7D0; }
+.blocked-dialog .content, .blocked-dialog { -fx-background-color: #0F1626; }
+.blocked-dialog > .header-panel { -fx-background-color: #13314A; }
+.blocked-dialog > .header-panel .label { -fx-text-fill: #F1F5FF; }
+
+/* ---- «Ver detalles» de Bloqueados en tema Oscuro ---- */
+.blocked-title { -fx-text-fill: #F1F5FF; }
+.blocked-tabs { -fx-background-color: #0E2E30; -fx-border-color: #1D6E68; }
+.blocked-tab { -fx-text-fill: #A9E8DF; }
+.blocked-tab:hover { -fx-background-color: #134446; }
+.blocked-tab:selected { -fx-background-color: #14B8A6; -fx-text-fill: #062A2F; }
+.blocked-tab-icon { -fx-stroke: #A9E8DF; }
+.blocked-tab:selected .blocked-tab-icon { -fx-stroke: #062A2F; }
+.blocked-dialog .blocked-section-title { -fx-text-fill: #7EEADB; }
+.blocked-dialog .blocked-item { -fx-background-color: #13283A; }
+
+/* ---- Filtros «Bloqueados» / «Desbloqueados» en tema Oscuro ---- */
+.blocked-filter { -fx-background-color: #13283A; -fx-text-fill: #C9D6EA; -fx-border-color: #24405A; }
+.blocked-filter:hover { -fx-background-color: #183349; }
+.blocked-filter-icon { -fx-stroke: #C9D6EA; }
+.blocked-filter-on:selected { -fx-background-color: #D93B48; -fx-text-fill: #FFFFFF; -fx-border-color: #D93B48; }
+.blocked-filter-off:selected { -fx-background-color: #10A574; -fx-text-fill: #FFFFFF; -fx-border-color: #10A574; }
+.blocked-filter:selected .blocked-filter-icon { -fx-stroke: #FFFFFF; }
+
+/* ---- «Justificar» en tema Oscuro ---- */
+.justify-button { -fx-background-color: #14B8A6; -fx-text-fill: #062A2F; }
+.justify-button:disabled { -fx-background-color: #1D4A4A; -fx-text-fill: #A9D9D2; }
+.justify-attach { -fx-background-color: #0E2E30; -fx-border-color: #1D6E68; -fx-text-fill: #A9E8DF; }
+.justify-pendiente { -fx-text-fill: #FFC266; } .justify-aprobada { -fx-text-fill: #43E0A8; } .justify-rechazada { -fx-text-fill: #FF8C9E; }

@@ -1,0 +1,24 @@
+# Plantilla systemd para el backend FamilyGuard (Etapa 7). NO se ha instalado.
+# Copiar a /etc/systemd/system/ y ajustar rutas. Requiere Java 17.
+[Unit]
+Description=FamilyGuard backend
+After=network-online.target mysql.service
+Wants=network-online.target
+
+[Service]
+User=familyguard
+Group=familyguard
+# Archivo con permisos 600, propiedad de root; ver backend.env.example.
+EnvironmentFile=/etc/familyguard/backend.env
+ExecStart=/usr/bin/java -Xms256m -Xmx512m -jar /opt/familyguard/familyguard-backend.jar --spring.profiles.active=remote
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/familyguard
+
+[Install]
+WantedBy=multi-user.target

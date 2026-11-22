@@ -1,0 +1,17 @@
+95dc6695038e944e8db873eaa534e65b  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard.css
+b301bcb9ff23c5b6249e50a4088310fe  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard-light.css
+31fa1ccb1d378e26e1c4f1b2db23df18  familyguard-admin/src/test/java/com/familyguard/admin/WebRulePlanTests.java
+525d5f02b1de2c6dd95677ce5ed27b74  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+baa71b16c79aaf978125783c092e5f18  familyguard-admin/src/main/java/com/familyguard/admin/AdminApiClient.java
+094f6ede27c757fa2c00c5f648ac0275  familyguard-admin/src/main/java/com/familyguard/admin/WebRulePlan.java
+00afc7203c0c139c1b27ec179e987296  familyguard-agent/src/test/java/com/familyguard/agent/WebScheduleExecutionTests.java
+d0efdabb61c3174e9667cadd0514901b  familyguard-agent/src/main/java/com/familyguard/agent/WebRestrictionEngine.java
+6b693021e990dbcacc19df631e0f187f  familyguard-agent/src/main/java/com/familyguard/agent/TrustedClock.java
+31c7d255d64baa5aed1c6fdaa488d4ef  familyguard-agent/src/main/java/com/familyguard/agent/AgentRuntime.java
+366a7dc4d781eb591994fedbb70c97e1  familyguard-backend/src/test/java/com/familyguard/familyguard/ProgramacionWebTests.java
+c62815c9ba6fd997bedb577587ebae59  familyguard-backend/src/test/java/com/familyguard/familyguard/WebScheduleApiIntegrationTests.java
+7d14e645e57bfa58bd8a12b5aae8ed69  familyguard-backend/src/main/java/com/familyguard/familyguard/domain/repository/EventoSitioRepository.java
+94a19ee5978222545e11f6ab0ec7467a  familyguard-backend/src/main/java/com/familyguard/familyguard/api/SitioController.java
+ffec20694a5123cbf391854e4cc280be  familyguard-backend/src/main/java/com/familyguard/familyguard/service/SitioService.java
+7a10146a9b3f1739706a9419ceb7787d  familyguard-backend/src/main/java/com/familyguard/familyguard/service/ProgramacionWeb.java
+2d823bb9097021553e2b54d69d2b36ff  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/SitioDtos.java

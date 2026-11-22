@@ -1,0 +1,5 @@
+478695d0130075ff273fcbda1a5fb173  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/RestriccionDtos.java
+3fc681be60704f30f6d5c3ef07a3b828  familyguard-backend/src/main/java/com/familyguard/familyguard/service/RestriccionService.java
+221a551b77672484b57819fb30a38c90  familyguard-agent/src/main/java/com/familyguard/agent/DetectionModels.java
+659eb6c954afe1dd40e2e98f428dc1ee  familyguard-agent/src/main/java/com/familyguard/agent/AgentApiClient.java
+df29eb76834fd9287f516acb5ff64300  familyguard-agent/src/main/java/com/familyguard/agent/RuleEvaluator.java

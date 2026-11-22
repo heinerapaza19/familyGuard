@@ -1,0 +1,8 @@
+b0b407301b2fc0648e2e02366df3b2d0  familyguard-agent/src/main/java/com/familyguard/agent/ExecutablePaths.java
+6e14e8f084c4d73b83912db98eee618f  familyguard-agent/src/main/java/com/familyguard/agent/RestrictionEngine.java
+c38c69aa8f717eed60ac51cf523d927f  familyguard-agent/src/main/java/com/familyguard/agent/ProcessRestrictionController.java
+a09269e0e8e1921aa7ce5c5744748957  familyguard-agent/src/main/java/com/familyguard/agent/ForegroundWindowDetector.java
+87fe9fbde5c4253aff9bb7f2e8ec7061  familyguard-agent/src/test/java/com/familyguard/agent/StoreAppsTests.java
+074925d3f49be73e9d6ffda41af967a6  familyguard-admin/src/main/java/com/familyguard/admin/InstallerHint.java
+5169fa6e49be759b1eaaef2197279e42  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+e1b29d7af67cbd2d2d0100cd1b3d5cdd  familyguard-admin/src/test/java/com/familyguard/admin/InstallerHintTests.java

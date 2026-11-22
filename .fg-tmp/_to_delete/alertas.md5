@@ -1,0 +1,5 @@
+043b15a63633c186cf60c1c497a922a8  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+136e172735384592f44d51dcb3fd53f4  familyguard-admin/src/main/java/com/familyguard/admin/AlertStyle.java
+6aa31334fdb2cb657d811eacac6bb59e  familyguard-admin/src/test/java/com/familyguard/admin/AlertStyleTests.java
+4f9f91df7e2bb68ab309311a54728aea  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard.css
+36507373a7863c64b3510e25d3980982  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard-light.css

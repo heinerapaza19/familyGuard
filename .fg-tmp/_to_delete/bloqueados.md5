@@ -1,0 +1,8 @@
+593886cd7a18adfdbca7c73e076900df  familyguard-agent/src/main/java/com/familyguard/agent/BlockedSummary.java
+b4bc2143daa37e9a8d32ad12b17d8886  familyguard-agent/src/main/java/com/familyguard/agent/AgentHomeView.java
+9cc2dd8560beb98f05413b3e96083522  familyguard-agent/src/main/java/com/familyguard/agent/AgentApplication.java
+af1ab05bbeb94a231cd240e7ce200530  familyguard-agent/src/main/java/com/familyguard/agent/AgentRuntime.java
+f5502ae580a9764afa95a75bdf3171b1  familyguard-agent/src/main/java/com/familyguard/agent/WebRestrictionEngine.java
+150d0aedc59a5b948e4e66fb2142a446  familyguard-agent/src/main/resources/com/familyguard/agent/agent.css
+f4d885d9a72db77ffafe783a566a1df5  familyguard-agent/src/main/resources/com/familyguard/agent/agent-dark.css
+0ca17ab84acde05fe833d4cabca6b22b  familyguard-agent/src/test/java/com/familyguard/agent/BlockedSummaryTests.java

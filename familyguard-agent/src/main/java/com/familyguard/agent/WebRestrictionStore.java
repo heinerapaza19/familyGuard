@@ -1,0 +1,11 @@
+package com.familyguard.agent;
+import static com.familyguard.agent.DetectionModels.*;import com.sun.jna.platform.win32.Crypt32Util;import java.nio.file.*;import java.util.*;import tools.jackson.databind.ObjectMapper;
+final class WebRestrictionStore{private final ObjectMapper mapper=new ObjectMapper();private final Path file;private State state;private String recovery;WebRestrictionStore(){this(AgentPaths.userData("web-rules.bin"));}WebRestrictionStore(Path p){file=p;state=read();}
+ synchronized State snapshot(){return new State(state.zoneId(),List.copyOf(state.rules()),List.copyOf(state.events()));}/** Devuelve {@code false} y no reescribe el archivo cifrado cuando las reglas no cambiaron. */
+ synchronized boolean rules(String z,List<WebRule> r){if(Objects.equals(state.zoneId(),z)&&state.rules().equals(r))return false;state=new State(z,List.copyOf(r),state.events());write();return true;}synchronized void event(WebEvent e){var all=new ArrayList<>(state.events());all.add(e);state=new State(state.zoneId(),state.rules(),List.copyOf(all));write();}synchronized void ack(Collection<UUID>ids){Set<UUID>s=Set.copyOf(ids);state=new State(state.zoneId(),state.rules(),state.events().stream().filter(e->!s.contains(e.eventId())).toList());write();}
+ private State read(){try{if(!Files.exists(file))return new State(java.time.ZoneId.systemDefault().getId(),List.of(),List.of());return mapper.readValue(Crypt32Util.cryptUnprotectData(Files.readAllBytes(file)),State.class);}catch(Exception e){recovery=DamagedFiles.quarantine(file,"El caché de reglas web");return new State(java.time.ZoneId.systemDefault().getId(),List.of(),List.of());}}
+ /** Aviso si el caché estaba dañado al iniciar (problema N.º 5); {@code null} si se leyó bien. */
+ String recoveryNotice(){return recovery;}
+ private void write(){try{Files.createDirectories(file.getParent());Path t=file.resolveSibling(file.getFileName()+".tmp");Files.write(t,Crypt32Util.cryptProtectData(mapper.writeValueAsBytes(state)));Files.move(t,file,StandardCopyOption.REPLACE_EXISTING);}catch(Exception e){throw new IllegalStateException("No se pudo guardar la cache web",e);}}
+ record State(String zoneId,List<WebRule>rules,List<WebEvent>events){}
+}

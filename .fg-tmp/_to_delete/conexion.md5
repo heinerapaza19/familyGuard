@@ -1,0 +1,8 @@
+7454da86f0bd8a3b6d058ac4694bd392  familyguard-agent/src/main/resources/com/familyguard/agent/agent-dark.css
+5ba56315a5000dd5b07aafb86a5e6790  familyguard-agent/src/main/resources/com/familyguard/agent/agent.css
+f1fe97989d9c1acbccff3cd9798da288  familyguard-agent/src/test/java/com/familyguard/agent/AutomaticConnectionTests.java
+9f974fa6edf7bb4efa054a8d0d5aa505  familyguard-agent/src/main/java/com/familyguard/agent/AgentRuntime.java
+0f8894c8010bdb9a01b8c850c05603b3  familyguard-agent/src/main/java/com/familyguard/agent/NetworkMonitor.java
+81a6bc4690bf1ab8cee4dc529d3fdcb9  familyguard-agent/src/main/java/com/familyguard/agent/ConnectionSupervisor.java
+a4b5e9d0e2a6995b19b96b6ae0fdb1c7  familyguard-agent/src/main/java/com/familyguard/agent/ConnectionTexts.java
+0094a8274346cbe2fd4b9cc3e8819a46  familyguard-agent/src/main/java/com/familyguard/agent/AgentApplication.java

@@ -1,0 +1,12 @@
+5c3530efef8a44c64c3ddb9085182eab  familyguard-admin/src/main/java/com/familyguard/admin/AdminApplication.java
+ec320e62f549e1d02b97391b4f03461e  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+adb1574a6d5ca9d3d1c515f9bb4675c9  familyguard-admin/src/main/java/com/familyguard/admin/UsernameRule.java
+97c9e1a204da520aee5a144a8a54f83d  familyguard-admin/src/test/java/com/familyguard/admin/UsernameRuleTests.java
+6a748726fd4a59d8d55e7d8c729cea78  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/NombreUsuario.java
+be90324e1e80d61b247c4f7a9a0efcac  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/RegistroPadreRequest.java
+26861dc0a431d04228cd595090f0860f  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/LoginRequest.java
+18fda3443a248e3c5f7238e52c914cef  familyguard-backend/src/main/java/com/familyguard/familyguard/api/dto/ActualizarPerfilRequest.java
+10bc118d5068fb8e032c8dc7e1f9238e  familyguard-backend/src/main/java/com/familyguard/familyguard/domain/model/Usuario.java
+e29f54ba6789540150c463b8e92ad9f8  familyguard-backend/src/main/java/com/familyguard/familyguard/service/RegistroService.java
+ecf0ddd9117f0ce5864dee94cf49fa7a  familyguard-backend/src/main/java/com/familyguard/familyguard/service/AutenticacionService.java
+b09f115d8e0dcbedf8ff9e5003a1da96  familyguard-backend/src/test/java/com/familyguard/familyguard/AuthenticationApiIntegrationTests.java

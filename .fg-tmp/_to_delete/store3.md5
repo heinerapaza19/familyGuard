@@ -1,0 +1,9 @@
+a3817b472a3d4ef21a51e1f9d7cd1e0f  familyguard-agent/src/main/java/com/familyguard/agent/ExecutablePaths.java
+da77d74ae143cbf77922132ff88093e6  familyguard-agent/src/main/java/com/familyguard/agent/RestrictionEngine.java
+25f653731c3d970ee7d67e8b6b65729c  familyguard-agent/src/main/java/com/familyguard/agent/BlockedSummary.java
+e33e5b4ba0a80420330a773ed9371a9e  familyguard-agent/src/test/java/com/familyguard/agent/StoreWideBlockTests.java
+19fc448a74cbc05a7912b6551148be3c  familyguard-admin/src/main/java/com/familyguard/admin/InstallerHint.java
+189048ccb5602ef0c3cd193ce1b53443  familyguard-admin/src/main/java/com/familyguard/admin/DashboardWorkspace.java
+658ca50ba259d82474ccdf54e89a7b0f  familyguard-admin/src/test/java/com/familyguard/admin/InstallerHintTests.java
+e3acc2fbe3d8d9296ba4ebd83cc2d24d  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard.css
+3368e86a81b9ac97d33f4502dee26507  familyguard-admin/src/main/resources/com/familyguard/admin/familyguard-light.css

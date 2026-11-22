@@ -1,0 +1,6 @@
+package com.familyguard.agent;
+import static org.junit.jupiter.api.Assertions.*;import java.net.*;import java.nio.file.*;import java.util.*;import org.junit.jupiter.api.Test;import org.junit.jupiter.api.condition.*;
+/** Prueba manual reversible: conserva y restaura exactamente el archivo hosts. */
+@EnabledOnOs(OS.WINDOWS) class WindowsManualWebFilterIT{
+ @Test void bloqueaDominioDePruebaYRestauraSistema()throws Exception{Path hosts=Path.of(System.getenv().getOrDefault("WINDIR","C:\\Windows"),"System32","drivers","etc","hosts");byte[] backup=Files.readAllBytes(hosts);HostsFileFilter filter=new HostsFileFilter(hosts);boolean changed=false;try{assertNotNull(InetAddress.getByName("example.org"));var applied=filter.apply(Set.of("example.com"));assertTrue(applied.successful(),applied.detail());changed=true;InetAddress result=InetAddress.getByName("example.com");assertTrue(result.isAnyLocalAddress()||result.isLoopbackAddress(),"El dominio no resolvió a una dirección de bloqueo");assertNotNull(InetAddress.getByName("example.org"));}finally{if(changed){Files.write(hosts,backup,StandardOpenOption.TRUNCATE_EXISTING);new ProcessBuilder("ipconfig.exe","/flushdns").start().waitFor();}}assertArrayEquals(backup,Files.readAllBytes(hosts),"El archivo hosts no se restauró exactamente");}
+}
